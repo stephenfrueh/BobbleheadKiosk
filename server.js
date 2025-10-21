@@ -12,6 +12,7 @@ app.use((req, res, next) => {
 });
 
 const buildRoot = path.join(__dirname, ""); // contains index.html & Build/
+console.log(buildRoot);
 
 app.use("/", expressStaticGzip(buildRoot, {
   enableBrotli: true,
