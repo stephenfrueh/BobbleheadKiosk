@@ -1,6 +1,6 @@
 const path = require("path");
 const express = require("express");
-const { expressStaticGzip } = require("express-static-gzip");
+const expressStaticGzip = require("express-static-gzip");
 
 const app = express();
 
