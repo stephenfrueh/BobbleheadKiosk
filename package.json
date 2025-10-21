@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-static-gzip": "^3.0.0"
+  }
+}
