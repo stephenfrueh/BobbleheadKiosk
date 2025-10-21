@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const buildRoot = path.join(__dirname, "YourBuildFolder"); // contains index.html & Build/
+const buildRoot = path.join(__dirname, ""); // contains index.html & Build/
 
 app.use("/", expressStaticGzip(buildRoot, {
   enableBrotli: true,
@@ -28,12 +28,6 @@ app.use("/", expressStaticGzip(buildRoot, {
         res.setHeader("Content-Type", "application/octet-stream");
       } else if (filePath.endsWith(".symbols.json")) {
         res.setHeader("Content-Type", "application/json");
-      }
-
-      // Caching: file names are hashed, so immutable caching is safe
-      const oneYear = 31536000;
-      if (/\.(br|wasm|data|js|jpg|png|ogg|mp3|mp4|webm)$/.test(filePath)) {
-        res.setHeader("Cache-Control", `public, max-age=${oneYear}, immutable`);
       }
     }
   }
