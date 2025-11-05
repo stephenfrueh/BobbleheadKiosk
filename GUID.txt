@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 a4a7bb00227742a5947740b3698917f7
+=======
+8869f081e97e4971a0097a92ba55dd2d
+>>>>>>> parent of b282a2b (Revert "fixed retake button & clean build")
