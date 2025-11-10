@@ -1,3 +1,4 @@
+com.coffee.softmask-for-ugui@3.5.0
 com.readyplayerme.core@6.3.1
 com.unity.collab-proxy@2.9.3
 com.unity.connect.share@4.2.4
